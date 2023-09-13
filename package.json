@@ -1,0 +1,15 @@
+{
+  "name": "letcode-cypress-javascript",
+  "version": "1.0.0",
+  "description": "Automation script for letcode.in website using Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npx cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.2.0"
+  }
+}
