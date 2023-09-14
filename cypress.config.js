@@ -5,5 +5,9 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    baseUrl: 'https://letcode.in',
+  },
+  env: {
+    test_endpoint: '/test',
   },
 });
