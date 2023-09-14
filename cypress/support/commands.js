@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add('inputText', (elm, text) => { 
+    cy.get(elm).type(text)
+})
+
+Cypress.Commands.add('logText', (elm) => { 
+    cy.get(elm).invoke('val').then(($value) => {
+        cy.log('ELEMENT TEXT: ' + $value)
+    })
+})
