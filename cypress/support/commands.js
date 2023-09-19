@@ -29,6 +29,10 @@ Cypress.Commands.add('inputText', (elm, text) => {
     cy.get(elm).type(text)
 })
 
+Cypress.Commands.add('clickElm', (elm) => { 
+    cy.get(elm).click()
+})
+
 Cypress.Commands.add('logText', (elm) => { 
     cy.get(elm).invoke('val').then(($value) => {
         cy.log('ELEMENT TEXT: ' + $value)
