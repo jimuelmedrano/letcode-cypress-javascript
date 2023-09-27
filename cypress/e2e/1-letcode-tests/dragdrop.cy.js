@@ -8,6 +8,6 @@ describe('Letcode Drag and Drop Tests', () => {
     })
   
     it('Drag the element to dropable element', () => {
-      cy.get('#draggable').drag('#droppable')
+      cy.get('#draggable').drag('#droppable',{force: true})
     })
 })
