@@ -9,5 +9,6 @@ module.exports = defineConfig({
   },
   env: {
     test_endpoint: '/test',
+    random_user_api: 'https://random-data-api.com/api/v2/users',
   },
 });
