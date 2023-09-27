@@ -1,5 +1,4 @@
 /// <reference types="cypress" />
-import 'cypress-iframe'
 
 describe('Letcode Frame Tests', () => {
     beforeEach(() => {
